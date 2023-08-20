@@ -1,0 +1,17 @@
+{
+  "name": "cli-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "YOUR_NAME <YOUR_EMAIL>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "joi": "^17.9.2",
+    "yargs": "^17.7.2"
+  }
+}
