@@ -54,8 +54,10 @@ const getInfo = async (fileName) => {
     console.log(chalk.red(`File is not exist in folder`));
   } else {
     const filePath = path.join(__dirname, `./files/${fileName}`);
-    const dataFile = await fs.readFile(filePath, "utf-8");
-    console.log(dataFile);
+    const content = await fs.readFile(filePath, "utf-8");
+    const extention = path.extname(filePath);
+    const nameOfFile = path.basename(filePath, extention);
+    console.log({ nameOfFile, extention: extention.slice(1), content });
   }
 };
 
